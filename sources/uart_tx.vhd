@@ -106,7 +106,7 @@ nextstate: process(current_state, strobe, clk_cnt, bit_cnt) begin
                           then next_state <= st_ready;
                           end if;
       
-      when others      => NULL; --or should it be next_state <= next_state
+      when others      => NULL;
     end case; 
 end process nextstate;
 
