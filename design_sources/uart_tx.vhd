@@ -36,7 +36,7 @@ architecture Behavioral of uart_tx is
   signal next_state    : STATE_TYPE   := st_reset;
    
   -- Sub State signals
-  signal data     : std_logic_vector(7 downto 0) := "00000000";
+  signal data    : std_logic_vector(7 downto 0) := (others => '0');
   signal bit_cnt : std_logic_vector(2 downto 0) := (others => '0');
   signal clk_cnt : std_logic_vector(3 downto 0) := (others => '0');
   
@@ -136,3 +136,4 @@ end process output;
 
 
 end Behavioral;
+      
