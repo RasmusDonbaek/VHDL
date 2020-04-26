@@ -5,7 +5,7 @@
 --                  and pulses the strobe 'STB_O' for one clock cycle
 --                  The transmission rate should be 16 times slower than the provided clock 'CLK_UART_I'.
 -- Author         : Rasmus Donbaek Knudsen
--- Date           : 2020-04-25
+-- Date           : 2020-04-25 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
